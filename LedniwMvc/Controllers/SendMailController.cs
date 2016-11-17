@@ -13,7 +13,7 @@ namespace LedniwMvc.Controllers
         {
             using (var client = new SmtpClient("smtp.gmail.com", 587)
             {
-                Credentials = new NetworkCredential("serjiro@gmail.com", "p@ssw@rd1"),
+                Credentials = new NetworkCredential(@"serjiro@gmail.com", @"p@ssw@rd1"),
                 UseDefaultCredentials = false,
                 EnableSsl = true
             })
