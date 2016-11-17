@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DrivEnable OT Services</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bowerdist/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bowerdist/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bowerdist/bootstrap/dist/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="bowerdist/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app.css">  
+  <script src="bowerdist/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="toggle" ng-include="'common/heading.html'"></div>
+  </header>
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+  <footer>
+    <div ng-include="'common/footer.html'"></div>
+  </footer>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bowerdist/jquery/dist/jquery.min.js"></script>  
+  <script src="bowerdist/angular/angular.min.js"></script>
+  <script src="bowerdist/angular-route/angular-route.min.js"></script>  
+
+  <script src="bowerdist/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="homeassesment/homeassesment.js"></script>
+  <script src="drivingassesment/drivingassesment.js"></script>
+  <script src="psychologicalstrategies/psychologicalstrategies.js"></script>
+  <script src="injuries/injuries.js"></script>
+  <script src="disability/disability.js"></script>
+
+  <script src="credentials/credentials.js"></script>
+  <script src="confidentiality/confidentiality.js"></script>
+  <script src="contacts/contacts.js"></script>
+
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<div ng-include="'common/breadcrumbs.html'"></div>
+<div class="container">  
+    <div class="row">
+        <div class="col-sm-12 contact-map">            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.6168906066064!2d150.91379131582386!3d-33.770564521399685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1298f901195fe1%3A0xdb3c4e8da68b9f4!2s6%2F7-9+Boyd+St%2C+Blacktown+NSW+2148%2C+Australia!5e0!3m2!1sen!2sph!4v1455627184222" width="600" height="450" frameborder="0" style="border:0; width:100%; height:300px;"></iframe>
+        </div>       
+        <div class="col-lg-3">
+            <div class="container-fluid contactinfo contact-details">
+                <h3>CONTACT INFO</h3>
+                <address>
+                    Elmer Sagenes<br/>
+                    6/7 Boyd Street,<br/>
+                    Blacktown, <br/>
+                    NSW 2148.<br/>
+                    Phone: 0410 867 770<br/>
+                    Email: <a href="mailto:sageneselmer@hotmail.com">sageneselmer@hotmail.com</a>​
+                </address>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="container-fluid contactinfo contact-details">
+                <h3>CONTACT FORM</h3>        
+                <form name="frm" ng-submit="frm.$valid && submitForm()" method="post" class="form-horizontal" >
+                    <div class="form-group firstinputs">
+                        <div class="col-lg-4" ng-class="{ 'has-error has-feedback': frm.fullname.$dirty && frm.fullname.$invalid, 'has-success has-feedback': frm.fullname.$dirty && frm.fullname.$valid }" >
+                            <input type="text" class="form-control" name="fullname" placeholder="Name:" ng-model="contact.fullname" required />
+                            <span ng-class="{'glyphicon glyphicon-remove form-control-feedback': frm.fullname.$dirty && frm.fullname.$invalid, 'glyphicon glyphicon-ok form-control-feedback': frm.fullname.$dirty && frm.fullname.$valid}"></span>
+                            <span ng-show="frm.fullname.$dirty &&  frm.fullname.$error.required" class="help-block">Name is required and cannot be empty</span>
+                        </div>
+                        <div class="col-lg-4" ng-class="{ 'has-error has-feedback': frm.email.$dirty && frm.email.$invalid, 'has-success has-feedback': frm.email.$dirty && frm.email.$valid }" >
+                            <input type="email" class="form-control" name="email" placeholder="E-mail:" ng-model="contact.email" required />
+                            <span ng-class="{'glyphicon glyphicon-remove form-control-feedback': frm.email.$dirty && frm.email.$invalid, 'glyphicon glyphicon-ok form-control-feedback': frm.email.$dirty && frm.email.$valid}"></span>
+                            <span ng-show="frm.email.$dirty &&  frm.email.$error.required" class="help-block">E-mail is required and cannot be empty</span>
+                            <span ng-show="frm.email.$dirty &&  frm.email.$error.email" class="help-block">The input is not a valid email</span>                            
+                        </div>
+                        <div class="col-lg-4" ng-class="{ 'has-error has-feedback': frm.phone.$dirty && frm.phone.$invalid, 'has-success has-feedback': frm.phone.$dirty && frm.phone.$valid }" >
+                            <input type="text" class="form-control" name="phone" placeholder="Phone:" ng-model="contact.phone" required />
+                            <span ng-class="{'glyphicon glyphicon-remove form-control-feedback': frm.phone.$dirty && frm.phone.$invalid, 'glyphicon glyphicon-ok form-control-feedback': frm.phone.$dirty && frm.phone.$valid}"></span>
+                            <span ng-show="frm.phone.$dirty &&  frm.phone.$error.required" class="help-block">Phone is required and cannot be empty</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12" ng-class="{ 'has-error has-feedback': frm.message.$dirty && frm.message.$invalid, 'has-success has-feedback': frm.message.$dirty && frm.message.$valid  }">
+                            <textarea class="form-control" name="message" rows="10" placeholder="Message:" ng-model="contact.message" required></textarea>
+                            <span ng-class="{'glyphicon glyphicon-remove form-control-feedback': frm.message.$dirty && frm.message.$invalid, 'glyphicon glyphicon-ok form-control-feedback': frm.message.$dirty && frm.message.$valid}"></span>
+                            <span ng-show="frm.message.$dirty &&  frm.message.$error.required" class="help-block">Phone is required and cannot be empty</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            Prove that you are not a robot: <span>{{captcha1}} + {{captcha2}}</span>
+                        </div>
+                        <div class="col-xs-2" ng-class="{ 'has-error has-feedback': frm.captcha.$dirty && captcha1 + captcha2 != frm.captcha.$modelValue, 'has-success has-feedback': frm.captcha.$dirty && captcha1 + captcha2 == frm.captcha.$modelValue }" >
+                            <input type="text" class="form-control" name="captcha" placeholder="Answer:" ng-model="captcha" required />
+                            <span ng-class="{'glyphicon glyphicon-remove form-control-feedback': frm.captcha.$dirty && captcha1 + captcha2 != frm.captcha.$modelValue, 'glyphicon glyphicon-ok form-control-feedback': frm.captcha.$dirty && captcha1 + captcha2 == frm.captcha.$modelValue}"></span>
+                            <span ng-show="frm.captcha.$dirty && captcha1 + captcha2 != frm.captcha.$modelValue" class="help-block">Incorrect answer</span>
+                        </div>
+                        <div class="col-xs-12">
+                            <button type="button" class="btn btn-default defaultbutton-gray">CLEAR</button>
+                            <button type="submit" class="btn btn-primary defaultbutton-green" ng-click="submitted=true">SEND</button>
+                            <div class="spinner-container">
+                                <div class="spinner-loader"></div>
+                            </div>
+                        </div>
+                        <div id="msg" class="alert col-xs-12" role="alert"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
