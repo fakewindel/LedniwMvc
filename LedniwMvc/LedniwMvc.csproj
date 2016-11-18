@@ -133,6 +133,7 @@
     <Content Include="animation.css" />
     <Content Include="app.css" />
     <Content Include="app.js" />
+    <Content Include="common\breadcrumbs.html" />
     <Content Include="common\footer.html" />
     <Content Include="common\heading.html" />
     <Content Include="common\services.html" />
@@ -195,7 +196,9 @@
     <Content Include="view2\view2.html" />
     <Content Include="view2\view2.js" />
     <Content Include="view2\view2_test.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -205,6 +208,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -222,7 +226,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -35,7 +35,8 @@ angular.module('myApp.contacts', ['ngRoute'])
 				//type 	: 'jsonp', // not needed
 				headers	: {'Content-Type': 'application/x-www-form-urlencoded'}
 			})
-			.success(function(data){
+			.success(function (data) {
+			    console.log(data);
 				alert("Message submitted. Thank you!");
 				$location.path('/home');
 			});
