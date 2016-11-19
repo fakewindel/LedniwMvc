@@ -266,7 +266,6 @@
     <Content Include="psychologicalstrategies\psychologicalstrategies_test.js" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="testpage\Testpost.html" />
     <Content Include="view2\view2.html" />
     <Content Include="view2\view2.js" />
     <Content Include="view2\view2_test.js" />
@@ -277,9 +276,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\MailerController.cs" />
     <Compile Include="Controllers\SendMailController.cs" />
-    <Compile Include="Controllers\TestapiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

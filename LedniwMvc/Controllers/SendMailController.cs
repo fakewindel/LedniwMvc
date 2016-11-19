@@ -15,7 +15,7 @@ namespace LedniwMvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                MailMessage msg = new MailMessage();
+                var msg = new MailMessage();
                 msg.From = new MailAddress(WebConfigurationManager.AppSettings["SenderEmailFrom"]);
                 msg.To.Add(new MailAddress(WebConfigurationManager.AppSettings["SenderEmailTo"]));
                 msg.Bcc.Add( new MailAddress(WebConfigurationManager.AppSettings["SenderEmailBcc"] ));
@@ -31,7 +31,7 @@ namespace LedniwMvc.Controllers
                 if (isLocal)
                     return Request.CreateErrorResponse(HttpStatusCode.ExpectationFailed, "Will not be able to send email from local machine");
 
-                SmtpClient client = new SmtpClient();
+                var client = new SmtpClient();
                 client.Send(msg);
                 return Request.CreateResponse(HttpStatusCode.OK, string.Empty);
             }
