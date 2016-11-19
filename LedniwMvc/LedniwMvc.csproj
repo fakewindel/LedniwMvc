@@ -133,6 +133,31 @@
     <Content Include="animation.css" />
     <Content Include="app.css" />
     <Content Include="app.js" />
+    <Content Include="bowerdist\angular-route\angular-route.js" />
+    <Content Include="bowerdist\angular-route\angular-route.min.js" />
+    <Content Include="bowerdist\angular\angular-csp.css" />
+    <Content Include="bowerdist\angular\angular.js" />
+    <Content Include="bowerdist\angular\angular.min.js" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="bowerdist\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bowerdist\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="bowerdist\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="bowerdist\bootstrap\dist\js\npm.js" />
+    <Content Include="bowerdist\fontawesome\css\font-awesome.css" />
+    <Content Include="bowerdist\fontawesome\css\font-awesome.min.css" />
+    <Content Include="bowerdist\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="bowerdist\fontawesome\HELP-US-OUT.txt" />
+    <Content Include="bowerdist\html5-boilerplate\dist\css\main.css" />
+    <Content Include="bowerdist\html5-boilerplate\dist\css\normalize.css" />
+    <Content Include="bowerdist\html5-boilerplate\dist\js\main.js" />
+    <Content Include="bowerdist\html5-boilerplate\dist\js\plugins.js" />
+    <Content Include="bowerdist\html5-boilerplate\dist\js\vendor\jquery-1.11.3.min.js" />
+    <Content Include="bowerdist\html5-boilerplate\dist\js\vendor\modernizr-2.8.3.min.js" />
+    <Content Include="bowerdist\jquery\dist\jquery.js" />
+    <Content Include="bowerdist\jquery\dist\jquery.min.js" />
     <Content Include="common\breadcrumbs.html" />
     <Content Include="common\footer.html" />
     <Content Include="common\heading.html" />
@@ -184,6 +209,54 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="bowerdist\angular-route\angular-route.min.js.map" />
+    <Content Include="bowerdist\angular\angular.min.js.gzip" />
+    <Content Include="bowerdist\angular\angular.min.js.map" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="bowerdist\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="bowerdist\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bowerdist\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bowerdist\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bowerdist\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bowerdist\fontawesome\.bower.json" />
+    <Content Include="bowerdist\fontawesome\.gitignore" />
+    <Content Include="bowerdist\fontawesome\.npmignore" />
+    <Content Include="bowerdist\fontawesome\bower.json" />
+    <Content Include="bowerdist\fontawesome\css\font-awesome.css.map" />
+    <Content Include="bowerdist\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="bowerdist\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="bowerdist\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="bowerdist\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="bowerdist\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="bowerdist\fontawesome\less\animated.less" />
+    <Content Include="bowerdist\fontawesome\less\bordered-pulled.less" />
+    <Content Include="bowerdist\fontawesome\less\core.less" />
+    <Content Include="bowerdist\fontawesome\less\fixed-width.less" />
+    <Content Include="bowerdist\fontawesome\less\font-awesome.less" />
+    <Content Include="bowerdist\fontawesome\less\icons.less" />
+    <Content Include="bowerdist\fontawesome\less\larger.less" />
+    <Content Include="bowerdist\fontawesome\less\list.less" />
+    <Content Include="bowerdist\fontawesome\less\mixins.less" />
+    <Content Include="bowerdist\fontawesome\less\path.less" />
+    <Content Include="bowerdist\fontawesome\less\rotated-flipped.less" />
+    <Content Include="bowerdist\fontawesome\less\stacked.less" />
+    <Content Include="bowerdist\fontawesome\less\variables.less" />
+    <Content Include="bowerdist\fontawesome\scss\font-awesome.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_animated.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_core.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_fixed-width.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_icons.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_larger.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_list.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_mixins.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_path.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_stacked.scss" />
+    <Content Include="bowerdist\fontawesome\scss\_variables.scss" />
+    <Content Include="bowerdist\jquery\dist\jquery.min.map" />
     <None Include="index.cshtml" />
     <Content Include="injuries\injuries.html" />
     <Content Include="injuries\injuries.js" />
@@ -193,6 +266,7 @@
     <Content Include="psychologicalstrategies\psychologicalstrategies_test.js" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="testpage\Testpost.html" />
     <Content Include="view2\view2.html" />
     <Content Include="view2\view2.js" />
     <Content Include="view2\view2_test.js" />
@@ -205,6 +279,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MailerController.cs" />
     <Compile Include="Controllers\SendMailController.cs" />
+    <Compile Include="Controllers\TestapiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -214,9 +289,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Properties\PublishProfiles\Driven Production.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

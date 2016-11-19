@@ -23,7 +23,7 @@
                 <form name="frm" ng-submit="frm.$valid && submitForm()" method="post" class="form-horizontal" >
                     <div class="form-group firstinputs">
                         <div class="col-lg-4" ng-class="{ 'has-error has-feedback': frm.fullname.$dirty && frm.fullname.$invalid, 'has-success has-feedback': frm.fullname.$dirty && frm.fullname.$valid }" >
-                            <input type="text" class="form-control" name="fullname" placeholder="Name:" ng-model="contact.fullname" required />
+                            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Name:" ng-model="contact.fullname" required />
                             <span ng-class="{'glyphicon glyphicon-remove form-control-feedback': frm.fullname.$dirty && frm.fullname.$invalid, 'glyphicon glyphicon-ok form-control-feedback': frm.fullname.$dirty && frm.fullname.$valid}"></span>
                             <span ng-show="frm.fullname.$dirty &&  frm.fullname.$error.required" class="help-block">Name is required and cannot be empty</span>
                         </div>

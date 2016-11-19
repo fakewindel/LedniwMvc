@@ -26,20 +26,19 @@ angular.module('myApp.contacts', ['ngRoute'])
 
 	//... TODO: try not to pass the scope
 	$scope.submitForm = function() {
-		if ($scope.captcha1 + $scope.captcha2 == $scope.captcha ) {		
-			$http({
-				method	: 'POST',
-			    //url 	: 'https://getsimpleform.com/messages?form_api_token=24822f3f3891f1dbce3c4bb4b69f0590', 
-				url: 'api/SendMail',
-				data	: $scope.contact,
-				//type 	: 'jsonp', // not needed
-				headers	: {'Content-Type': 'application/x-www-form-urlencoded'}
-			})
-			.success(function (data) {
-			    console.log(data);
-				alert("Message submitted. Thank you!");
-				$location.path('/home');
-			});
+	    if ($scope.captcha1 + $scope.captcha2 == $scope.captcha) {
+	        $http.post("api/SendMail", $scope.contact)
+            .success(function (data, status, headers, config) {
+                alert("Message submitted. Thank you!");
+                $location.path('/home');
+            }).error(function (data, status, headers, config) {
+                if (status == 417) {
+                    console.log(data.Message)
+                    alert(data.Message);
+                    $location.path('/home');
+                }
+                console.log(data);
+            });
 		}
 	};
 
